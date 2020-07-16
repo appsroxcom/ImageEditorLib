@@ -1,4 +1,15 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'appsroxcom'
+    repoName = 'maven'
+    groupId = 'com.appsrox'
+    artifactId = 'imageeditor'
+    publishVersion = '0.1.0'
+    desc = 'ImageEditor library for Android'
+    website = 'https://github.com/appsroxcom/ImageEditorLib'
+}
 
 android {
     compileSdkVersion 29
@@ -6,7 +17,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "0.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
