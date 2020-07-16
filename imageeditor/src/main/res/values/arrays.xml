@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="photo_editor_tools">
+        <item>CROP</item>
+        <item>BRUSH</item>
+        <item>TEXT</item>
+        <item>ERASER</item>
+        <item>FILTER</item>
+        <item>EMOJI</item>
+        <item>STICKER</item>
+    </string-array>
+</resources>
