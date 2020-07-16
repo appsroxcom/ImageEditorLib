@@ -55,7 +55,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
         StickerBSFragment.StickerListener, EditingToolsAdapter.OnItemSelected, FilterListener {
 
     private static final String TAG = EditImageActivity.class.getSimpleName();
-    //public static final String FILE_PROVIDER_AUTHORITY = "image.editor.android.fileprovider";
+    //public static final String FILE_PROVIDER_AUTHORITY = "image.editor.android.imageeditor.provider";
     private static final int CAMERA_REQUEST = 52;
     private static final int PICK_REQUEST = 53;
     private static final int CROP_REQUEST = 54;
