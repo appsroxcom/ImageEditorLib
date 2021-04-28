@@ -6,7 +6,7 @@ publish {
     repoName = 'maven'
     groupId = 'com.appsrox'
     artifactId = 'imageeditor'
-    publishVersion = '0.1.0'
+    publishVersion = '0.1.1'
     desc = 'ImageEditor library for Android'
     website = 'https://github.com/appsroxcom/ImageEditorLib'
 }

@@ -265,7 +265,7 @@ public class EditImageActivity extends BaseActivity implements OnPhotoEditorList
 
     @SuppressLint("MissingPermission")
     private void saveImage() {
-        if (requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        if (true/*requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)*/) {
             showLoading("Saving...");
             File file = new File(FileUtil.getStorageDirectory(getApplicationContext())
                     + File.separator + ""

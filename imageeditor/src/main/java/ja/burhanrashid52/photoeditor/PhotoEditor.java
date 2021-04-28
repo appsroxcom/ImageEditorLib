@@ -627,7 +627,7 @@ public class PhotoEditor implements BrushViewChangeListener {
      * @param onSaveListener callback for saving image
      * @see OnSaveListener
      */
-    @RequiresPermission(allOf = {Manifest.permission.WRITE_EXTERNAL_STORAGE})
+    /*@RequiresPermission(allOf = {Manifest.permission.WRITE_EXTERNAL_STORAGE})*/
     public void saveAsFile(@NonNull final String imagePath, @NonNull final OnSaveListener onSaveListener) {
         saveAsFile(imagePath, new SaveSettings.Builder().build(), onSaveListener);
     }
@@ -641,7 +641,7 @@ public class PhotoEditor implements BrushViewChangeListener {
      * @see OnSaveListener
      */
     @SuppressLint("StaticFieldLeak")
-    @RequiresPermission(allOf = {Manifest.permission.WRITE_EXTERNAL_STORAGE})
+    /*@RequiresPermission(allOf = {Manifest.permission.WRITE_EXTERNAL_STORAGE})*/
     public void saveAsFile(@NonNull final String imagePath,
                            @NonNull final SaveSettings saveSettings,
                            @NonNull final OnSaveListener onSaveListener) {

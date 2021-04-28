@@ -33,6 +33,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import io.reactivex.CompletableSource;
+import io.reactivex.Observable;
 import io.reactivex.SingleSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
@@ -137,7 +138,7 @@ public class SimpleCropFragment extends Fragment {
 
   private Disposable loadImage(final Uri uri) {
     mSourceUri = uri;
-    return new RxPermissions(getActivity()).request(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    return Observable.just(true)/*new RxPermissions(getActivity()).request(Manifest.permission.WRITE_EXTERNAL_STORAGE)*/
         .filter(new Predicate<Boolean>() {
           @Override
           public boolean test(@NonNull Boolean granted)
@@ -299,7 +300,7 @@ public class SimpleCropFragment extends Fragment {
     String fileName = "img" + title + "." + getMimeType(format);
     String path = dirPath + "/" + fileName;
     File file = new File(path);
-    ContentValues values = new ContentValues();
+    /*ContentValues values = new ContentValues();
     values.put(MediaStore.Images.Media.TITLE, title);
     values.put(MediaStore.Images.Media.DISPLAY_NAME, fileName);
     values.put(MediaStore.Images.Media.MIME_TYPE, "image/" + getMimeType(format));
@@ -312,7 +313,8 @@ public class SimpleCropFragment extends Fragment {
     }
 
     ContentResolver resolver = context.getContentResolver();
-    Uri uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+    Uri uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);*/
+    Uri uri = Uri.fromFile(file);
     Logger.i("SaveUri = " + uri);
     return uri;
   }
