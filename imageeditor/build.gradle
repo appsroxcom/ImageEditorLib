@@ -40,9 +40,9 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
 
     //simplecropview
-    implementation "com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar"
-    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
-    implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
+    implementation "com.github.tbruyelle:rxpermissions:0.10.2"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.21"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
